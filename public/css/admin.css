@@ -1,0 +1,174 @@
+:root {
+    --sidebar-width: 260px;
+    --primary-color: #008ccf;
+    /* PLN Blue */
+    --secondary-color: #ffde17;
+    /* PLN Yellow */
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    background: #212529;
+    color: #fff;
+    transition: all 0.3s;
+    min-height: 100vh;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #1a1e21;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li.active>a {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .04);
+}
+
+.main-content {
+    padding: 0 30px 30px 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.75rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #007bb6;
+    border-color: #007bb6;
+}
+
+.text-pln-blue {
+    color: var(--primary-color);
+}
+
+.bg-pln-blue {
+    background-color: var(--primary-color);
+}
+
+.text-pln-yellow {
+    color: var(--secondary-color);
+}
+
+.bg-pln-yellow {
+    background-color: var(--secondary-color);
+}
+
+/* Table Professional Styling */
+.table {
+    font-size: 0.9rem;
+}
+
+.table thead th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 140, 207, 0.03);
+}
+
+/* Pagination Professional Styling (Small) */
+.pagination {
+    margin: 0;
+}
+
+.page-link {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.825rem;
+    color: var(--primary-color);
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
+/* Custom shadow for cards */
+.card-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05) !important;
+}
+
+.font-monospace {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+}
